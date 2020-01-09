@@ -1,8 +1,8 @@
 package com.test.pojo;
 
-public class Car {
+public class car {
     private int cid;
-    private  String ctype;
+    private String ctype;
     private double cprice;
     private String cbrand;
     private int cage;
@@ -12,10 +12,11 @@ public class Car {
     private String ctitle;
     private int userid;
 
-    public Car() {
+
+    public car() {
     }
 
-    public Car(int cid, String ctype, double cprice, String cbrand, int cage, double cmile, String cmodel, String cphoto, String ctitle, int userid) {
+    public car(int cid, String ctype, double cprice, String cbrand, int cage, double cmile, String cmodel, String cphoto, String ctitle, int userid) {
         this.cid = cid;
         this.ctype = ctype;
         this.cprice = cprice;
@@ -25,46 +26,6 @@ public class Car {
         this.cmodel = cmodel;
         this.cphoto = cphoto;
         this.ctitle = ctitle;
-        this.userid = userid;
-    }
-
-    public void setCid(int cid) {
-        this.cid = cid;
-    }
-
-    public void setCtype(String ctype) {
-        this.ctype = ctype;
-    }
-
-    public void setCprice(double cprice) {
-        this.cprice = cprice;
-    }
-
-    public void setCbrand(String cbrand) {
-        this.cbrand = cbrand;
-    }
-
-    public void setCage(int cage) {
-        this.cage = cage;
-    }
-
-    public void setCmile(double cmile) {
-        this.cmile = cmile;
-    }
-
-    public void setCmodel(String cmodel) {
-        this.cmodel = cmodel;
-    }
-
-    public void setCphoto(String cphoto) {
-        this.cphoto = cphoto;
-    }
-
-    public void setCtitle(String ctitle) {
-        this.ctitle = ctitle;
-    }
-
-    public void setUserid(int userid) {
         this.userid = userid;
     }
 
@@ -106,5 +67,45 @@ public class Car {
 
     public int getUserid() {
         return userid;
+    }
+
+    public void setCid(int cid) {
+        this.cid = cid;
+    }
+
+    public void setCtype(String ctype) {
+        this.ctype = ctype;
+    }
+
+    public void setCprice(double cprice) {
+        this.cprice = cprice;
+    }
+
+    public void setCbrand(String cbrand) {
+        this.cbrand = cbrand;
+    }
+
+    public void setCage(int cage) {
+        this.cage = cage;
+    }
+
+    public void setCmile(double cmile) {
+        this.cmile = cmile;
+    }
+
+    public void setCmodel(String cmodel) {
+        this.cmodel = cmodel;
+    }
+
+    public void setCphoto(String cphoto) {
+        this.cphoto = cphoto;
+    }
+
+    public void setCtitle(String ctitle) {
+        this.ctitle = ctitle;
+    }
+
+    public void setUserid(int userid) {
+        this.userid = userid;
     }
 }
