@@ -29,7 +29,8 @@ public class LoginServlet extends HttpServlet {
             //session
             HttpSession session = request.getSession();
             session.setAttribute("name",name);
-            Date createTime = new Date(session.getCreationTime());
+/*            Date createTime = new Date(session.getCreationTime());
+            request.setAttribute("creattime",createTime);*/
             //转发
             //request.setAttribute("name",name);
             request.getRequestDispatcher("GetAllServlet").forward(request,response);

@@ -1,4 +1,4 @@
-<%--
+<%@ page import="java.util.Date" %><%--
   Created by IntelliJ IDEA.
   User: 雷耀宏
   Date: 2020/1/9
@@ -7,9 +7,10 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<% Date createTime = new Date(session.getCreationTime());%>
 
 
-<html>
+    <html>
 <head>
     <title>向日葵二手车主页</title>
     <link rel="stylesheet" href="bootstrap.min.css">
@@ -30,13 +31,13 @@
             <a class="navbar-brand" href="welcome.jsp">向日葵二手车</a>
         </div>
         <div>
-            <p class="navbar-text">${name} Name</p>
-            <p class="navbar-text">${creattime} Date</p>
+            <p class="navbar-text">用户：${name}</p>
+            <p class="navbar-text">登陆时间：<%out.print(createTime);%></p>
         </div>
     </nav>
 
     <div align="center" class="ex1">
-        <h1>二手车</h1>
+        <h1>向日葵二手车</h1>
 
         <div class="box" id="searchbox">
 
