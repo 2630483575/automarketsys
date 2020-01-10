@@ -113,22 +113,22 @@
             <table class="table table-bordered table-sm table-hover" style="width: 900px; text-align: center;">
                 <thead>
                 <tr>
-                    <th>商品名</th>
-                    <th>展示图</th>
-                    <th>品牌</th>
-                    <th>单价</th>
-                    <th>操作</th>
+                    <th style="text-align:center;vertical-align:middle;">商品名</th>
+                    <th style="text-align:center;vertical-align:middle;">展示图</th>
+                    <th style="text-align:center;vertical-align:middle;">品牌</th>
+                    <th style="text-align:center;vertical-align:middle;">单价</th>
+                    <th style="text-align:center;vertical-align:middle;">操作</th>
                 </tr>
                 </thead>
                 <tbody>
                 <c:forEach items="${list}" var="car">
                     <form action="" method="post">
                         <tr>
-                            <td>${car.title}</td>
-                            <td><img src="#"></td>
-                            <td>${car.carbrand}</td>
-                            <td>${car.carprice}</td>
-                            <td>
+                            <td style="text-align:center;vertical-align:middle;">${car.title}</td>
+                            <td style="text-align:center;vertical-align:middle;"><img src="${car.carphoto}" class="img-rounded" height="200" width="300"></td>
+                            <td style="text-align:center;vertical-align:middle;">${car.carbrand}</td>
+                            <td style="text-align:center;vertical-align:middle;">${car.carprice}</td>
+                            <td style="text-align:center;vertical-align:middle;">
                                 <input type="submit" class="btn btn-danger btn-sm" value="购买">
                             </td>
                         </tr>

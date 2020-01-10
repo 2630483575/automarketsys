@@ -24,4 +24,6 @@ public interface UserDaoInter {
     boolean addCar(Car car);
     //注册
     boolean addUser(User user);
+    //查询用户名是否被占用
+    boolean getUserByName(String name);
 }

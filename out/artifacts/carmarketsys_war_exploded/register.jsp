@@ -86,7 +86,7 @@
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             </button>
-            <a class="navbar-brand" href="welcome.jsp">向日葵二手车</a>
+            <a class="navbar-brand" href="#">向日葵二手车</a>
         </div>
         <%--<div>
             <p class="navbar-text">${username} Name</p>
@@ -96,7 +96,7 @@
     <div class="ex1">
         <div class="box">
             <h2>注册</h2>
-            <form action="" method="post" onsubmit="chk()">
+            <form action="/RegisterServlet" method="post" onsubmit="chk()">
                 <div class="inputbox">
                     <input type="text" name="username" required="">
                     <label>用户名</label><span>${msg}</span>
@@ -109,9 +109,11 @@
                     <input type="password" name="pwd_c" required="" onblur="chk_pwd()">
                     <label>确认密码</label>
                 </div>
-                <input  class="btn btn-default" type="submit" name="" value="注册" style="margin-right: 100px;">
-                <input  class="btn btn-default" type="submit" name="" value="取消" style="margin-left: 280px;" onclick="javascript:location.href='login.jsp'">
+
+                    <input  class="btn btn-default" type="submit" name="" value="注册">
+                    <a class="btn btn-default" style="float: right" href="login.jsp">取消</a>
             </form>
+
         </div>
 
     </div>

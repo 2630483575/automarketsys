@@ -308,5 +308,29 @@ public class UserDao implements UserDaoInter {
         return isSuccess;
     }
 
+    @Override
+    public boolean getUserByName(String name) {
+        boolean isExist = false;
+
+        String sql ="select * from myuser where name=?";
+        connection = dataBase.openconn();
+        try {
+            preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1,name);
+            resultSet = preparedStatement.executeQuery();
+
+            if (resultSet.next()){
+                isExist = true;
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            dataBase.closeConn(connection,preparedStatement,resultSet);
+        }
+
+        return isExist;
+    }
+
 
 }

@@ -26,7 +26,7 @@
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"></button>
-            <a class="navbar-brand" href="welcome.jsp">向日葵二手车</a>
+            <a class="navbar-brand" href="#">向日葵二手车</a>
         </div>
     </nav>
 
@@ -45,7 +45,7 @@
             <input  class="btn btn-default" type="submit" name="" value="登陆" style="margin-right: 230px;">
             <a class="btn btn-default" href="register.jsp">注册</a>
         </form>
-        <p>${msg}</p>
+        <p style="color: red">${msg}</p>
     </div>
 
 
