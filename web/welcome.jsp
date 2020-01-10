@@ -20,13 +20,13 @@
     </style>
 </head>
 <body>
+    <%--顶部导航栏--%>
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-header" href="welcome.jsp">向日葵二手车</a>
-            </div>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            </button>
+            <a class="navbar-brand" href="welcome.jsp">向日葵二手车</a>
         </div>
-
     </nav>
 
     <div align="center" class="ex1">
