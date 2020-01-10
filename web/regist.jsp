@@ -99,7 +99,7 @@
             <form action="" method="post" onsubmit="chk()">
                 <div class="inputbox">
                     <input type="text" name="username" required="">
-                    <label>用户名</label>
+                    <label>用户名</label><span>${msg}</span>
                 </div>
                 <div class="inputbox">
                     <input type="password" name="pwd" required="">

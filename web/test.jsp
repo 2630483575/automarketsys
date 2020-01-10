@@ -8,29 +8,35 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>test</title>
+    <title>向日葵二手车主页</title>
     <link rel="stylesheet" href="bootstrap.min.css">
-    <script src="bootstrap"></script>
-    <link rel="stylesheet" href="login.css">
-
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <style>
+        .ex1{padding: 70px}
+        .ex2{padding: 50px 50px 0px}
+        .box{width: 700px ;padding: 50px 100px 50px}
+    </style>
 </head>
 <body>
-<div class="box">
-    <h2>登陆</h2>
-    <form>
-        <div class="inputbox">
-            <input type="text" name="username" required="">
-            <label>用户名</label>
+<%--顶部导航栏--%>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        </button>
+        <a class="navbar-brand" href="welcome.jsp">向日葵二手车</a>
+    </div>
+    <div>
+        <p class="navbar-text">${username} Name</p>
+        <p class="navbar-text">${creattime} Date</p>
+        <div align="right" style="padding:0px 10px 0px 0px">
+            <button type="button" class="btn btn-default navbar-btn">发布</button>
         </div>
-        <div class="inputbox">
-            <input type="password" name="pwd" required="">
-            <label>密码</label>
-        </div>
-        <input  class="btn btn-default" type="submit" name="" value="登陆">
-        <a class="btn btn-default" href="resister.jsp">注册</a>
-    </form>
-</div>
+    </div>
+</nav>
+<div align="center" class="ex1">
 
+</div>
 
 </body>
 </html>
