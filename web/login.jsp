@@ -33,18 +33,19 @@
     <%--主体--%>
     <div class="box">
         <h2>登陆</h2>
-        <form>
+        <form action="LoginServlet" method="post">
             <div class="inputbox">
-                <input type="text" name="username" required="">
+                <input type="text" name="username" required>
                 <label>用户名</label>
             </div>
             <div class="inputbox">
-                <input type="password" name="pwd" required="">
+                <input type="password" name="pwd" required>
                 <label>密码</label>
             </div>
             <input  class="btn btn-default" type="submit" name="" value="登陆">
             <a class="btn btn-default" href="resister.jsp">注册</a>
         </form>
+        <p>${msg}</p>
     </div>
 
 

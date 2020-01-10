@@ -30,7 +30,7 @@
             <a class="navbar-brand" href="welcome.jsp">向日葵二手车</a>
         </div>
         <div>
-            <p class="navbar-text">${username} Name</p>
+            <p class="navbar-text">${name} Name</p>
             <p class="navbar-text">${creattime} Date</p>
         </div>
     </nav>
@@ -38,7 +38,7 @@
     <div align="center" class="ex1">
         <h1>二手车</h1>
 
-        <div class="box">
+        <div class="box" id="searchbox">
 
             <div align="center">
                 <div class="input-group">
@@ -54,7 +54,7 @@
         </div>
 
         //选择搜索
-        <div class="box">
+        <div class="box" id="listsearch">
             <form>
                 <select>
                     <option value="0">请选择车型</option>
@@ -76,29 +76,65 @@
         </div>
 
         //车辆展示
-        <div class="ex2">
-            <table style="width:70% " class="table table-bordered table-hover table-striped">
+        <div style="width: 900px" id="listDiv">
+<%--
+            <div style="height: 40px;">
+                <form action="product_list" method="post" id="queryFrom"
+                      class="form-inline input-group-sm"
+                      role="form" style="float: left;">
+                    关键字:
+                    <input type="text" class="form-control" name="keyword" style="width: 110px;" value="${qo.keyword}">
+                    品牌:
+                    <select class="form-control" name="brand_id">
+                        <option value="0">-不限-</option>
+                        <c:forEach items="${brands}" var="brand">
+                            <option value="${brand.id}" ${qo.brandId==brand.id?"selected":""} >${brand.name}</option>
+                        </c:forEach>
+                    </select>
+                    <input id="currentPage" name="current_page" type="hidden" value="${qo.currentPage}">
+                    <button type="submit" class="btn btn-primary btn-sm">筛选</button>
+                </form>
+                <!--
+
+        <div style="float: right;">
+            <a href="${pageContext.request.contextPath}/contact/edit" class="btn btn-primary btn-sm"
+               role="button">新增信息</a>
+            <a href="#" id="batchDelete" class="btn btn-primary btn-sm" role="button">删除选中</a>
+        </div> -->
+            </div>
+--%>
+
+            <table class="table table-bordered table-sm table-hover" style="width: 900px; text-align: center;">
+                <thead>
                 <tr>
-
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <th>商品名</th>
+                    <th>展示图</th>
+                    <th>描述</th>
+                    <th>单价</th>
+                    <th>操作</th>
                 </tr>
-
-                <c:forEach items="${list}" var="stu">
-                    <tr>
-                        <td>${stu.id}</td>
-                        <td>${stu.name}</td>
-                        <td>${stu.age}</td>
-                        <td>${stu.tel}</td>
-                        <td>${stu.sex}</td>
-                    </tr>
+                </thead>
+                <tbody>
+                <c:forEach items="${pageInfo.list}" var="prod">
+                    <form action="add_to_cart" method="post">
+                        <tr>
+                            <td>${prod.name}</td>
+                            <td><img src="images/${prod.image}"></td>
+                            <td>${prod.detail}</td>
+                            <td>${prod.price}</td>
+                            <td>
+                                <input type="hidden" name="product_id" value="${prod.id}">
+                                <input type="submit" class="btn btn-danger btn-sm" value="购买">
+                            </td>
+                        </tr>
+                    </form>
                 </c:forEach>
+                </tbody>
             </table>
 
 
-        </div>
 
+        </div>
 
 
 

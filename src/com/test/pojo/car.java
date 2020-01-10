@@ -1,111 +1,109 @@
 package com.test.pojo;
 
-public class car {
-    private int cid;
-    private String ctype;
-    private double cprice;
-    private String cbrand;
-    private int cage;
-    private double cmile;
-    private String cmodel;
-    private String cphoto;
-    private String ctitle;
+public class Car {
+    private int carid;
+    private String carprice;
+    private String carphoto;
+    private String carmileage;
+    private int carage;
+    private String cartype;
+    private String carbrand;
+    private String carmodle;
+    private String title;
     private int userid;
 
-
-    public car() {
+    public Car() {
     }
 
-    public car(int cid, String ctype, double cprice, String cbrand, int cage, double cmile, String cmodel, String cphoto, String ctitle, int userid) {
-        this.cid = cid;
-        this.ctype = ctype;
-        this.cprice = cprice;
-        this.cbrand = cbrand;
-        this.cage = cage;
-        this.cmile = cmile;
-        this.cmodel = cmodel;
-        this.cphoto = cphoto;
-        this.ctitle = ctitle;
+    public Car(String carprice, String carphoto, String carmileage, int carage, String cartype, String carbrand, String carmodle, String title, int userid) {
+        this.carprice = carprice;
+        this.carphoto = carphoto;
+        this.carmileage = carmileage;
+        this.carage = carage;
+        this.cartype = cartype;
+        this.carbrand = carbrand;
+        this.carmodle = carmodle;
+        this.title = title;
         this.userid = userid;
     }
 
-    public int getCid() {
-        return cid;
+    public void setCarid(int carid) {
+        this.carid = carid;
     }
 
-    public String getCtype() {
-        return ctype;
+    public void setCarprice(String carprice) {
+        this.carprice = carprice;
     }
 
-    public double getCprice() {
-        return cprice;
+    public void setCarphoto(String carphoto) {
+        this.carphoto = carphoto;
     }
 
-    public String getCbrand() {
-        return cbrand;
+    public void setCarmileage(String carmileage) {
+        this.carmileage = carmileage;
     }
 
-    public int getCage() {
-        return cage;
+    public void setCarage(int carage) {
+        this.carage = carage;
     }
 
-    public double getCmile() {
-        return cmile;
+    public void setCartype(String cartype) {
+        this.cartype = cartype;
     }
 
-    public String getCmodel() {
-        return cmodel;
+    public void setCarbrand(String carbrand) {
+        this.carbrand = carbrand;
     }
 
-    public String getCphoto() {
-        return cphoto;
+    public void setCarmodle(String carmodle) {
+        this.carmodle = carmodle;
     }
 
-    public String getCtitle() {
-        return ctitle;
-    }
-
-    public int getUserid() {
-        return userid;
-    }
-
-    public void setCid(int cid) {
-        this.cid = cid;
-    }
-
-    public void setCtype(String ctype) {
-        this.ctype = ctype;
-    }
-
-    public void setCprice(double cprice) {
-        this.cprice = cprice;
-    }
-
-    public void setCbrand(String cbrand) {
-        this.cbrand = cbrand;
-    }
-
-    public void setCage(int cage) {
-        this.cage = cage;
-    }
-
-    public void setCmile(double cmile) {
-        this.cmile = cmile;
-    }
-
-    public void setCmodel(String cmodel) {
-        this.cmodel = cmodel;
-    }
-
-    public void setCphoto(String cphoto) {
-        this.cphoto = cphoto;
-    }
-
-    public void setCtitle(String ctitle) {
-        this.ctitle = ctitle;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public void setUserid(int userid) {
         this.userid = userid;
+    }
+
+    public int getCarid() {
+        return carid;
+    }
+
+    public String getCarprice() {
+        return carprice;
+    }
+
+    public String getCarphoto() {
+        return carphoto;
+    }
+
+    public String getCarmileage() {
+        return carmileage;
+    }
+
+    public int getCarage() {
+        return carage;
+    }
+
+    public String getCartype() {
+        return cartype;
+    }
+
+    public String getCarbrand() {
+        return carbrand;
+    }
+
+    public String getCarmodle() {
+        return carmodle;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public int getUserid() {
+        return userid;
     }
 }
