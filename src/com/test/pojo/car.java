@@ -16,6 +16,7 @@ public class Car {
     }
 
     public Car(String carprice, String carphoto, String carmileage, int carage, String cartype, String carbrand, String carmodle, String title, int userid) {
+
         this.carprice = carprice;
         this.carphoto = carphoto;
         this.carmileage = carmileage;
@@ -26,6 +27,7 @@ public class Car {
         this.title = title;
         this.userid = userid;
     }
+
 
     public void setCarid(int carid) {
         this.carid = carid;

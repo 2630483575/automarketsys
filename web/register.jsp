@@ -88,10 +88,10 @@
             </button>
             <a class="navbar-brand" href="welcome.jsp">向日葵二手车</a>
         </div>
-        <div>
+        <%--<div>
             <p class="navbar-text">${username} Name</p>
             <p class="navbar-text">${creattime} Date</p>
-        </div>
+        </div>--%>
     </nav>
     <div class="ex1">
         <div class="box">
@@ -109,8 +109,8 @@
                     <input type="password" name="pwd_c" required="" onblur="chk_pwd()">
                     <label>确认密码</label>
                 </div>
-                <input  class="btn btn-default" type="submit" name="" value="注册">
-                <button class="btn btn-default" type="reset"></button>
+                <input  class="btn btn-default" type="submit" name="" value="注册" style="margin-right: 100px;">
+                <input  class="btn btn-default" type="submit" name="" value="取消" style="margin-left: 280px;" onclick="javascript:location.href='login.jsp'">
             </form>
         </div>
 

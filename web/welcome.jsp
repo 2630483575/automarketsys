@@ -28,11 +28,16 @@
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             </button>
-            <a class="navbar-brand" href="welcome.jsp">向日葵二手车</a>
+            <a class="navbar-brand" href="/GetAllServlet">向日葵二手车</a>
         </div>
         <div>
             <p class="navbar-text">用户：${name}</p>
             <p class="navbar-text">登陆时间：<%out.print(createTime);%></p>
+        </div>
+        <div align="right" style="padding:0px 10px 0px 0px">
+            <button onclick="window.location.href = 'release.jsp'" class="navbar-btn btn btn-primary">
+                发布
+            </button>
         </div>
     </nav>
 
@@ -110,21 +115,20 @@
                 <tr>
                     <th>商品名</th>
                     <th>展示图</th>
-                    <th>描述</th>
+                    <th>品牌</th>
                     <th>单价</th>
                     <th>操作</th>
                 </tr>
                 </thead>
                 <tbody>
-                <c:forEach items="${pageInfo.list}" var="prod">
-                    <form action="add_to_cart" method="post">
+                <c:forEach items="${list}" var="car">
+                    <form action="" method="post">
                         <tr>
-                            <td>${prod.name}</td>
-                            <td><img src="images/${prod.image}"></td>
-                            <td>${prod.detail}</td>
-                            <td>${prod.price}</td>
+                            <td>${car.title}</td>
+                            <td><img src="#"></td>
+                            <td>${car.carbrand}</td>
+                            <td>${car.carprice}</td>
                             <td>
-                                <input type="hidden" name="product_id" value="${prod.id}">
                                 <input type="submit" class="btn btn-danger btn-sm" value="购买">
                             </td>
                         </tr>

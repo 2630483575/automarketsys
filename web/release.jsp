@@ -25,14 +25,16 @@
     <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         </button>
-        <a class="navbar-brand" href="welcome.jsp">向日葵二手车</a>
+        <a class="navbar-brand" href="/GetAllServlet">向日葵二手车</a>
     </div>
     <div>
-        <p class="navbar-text">${username} Name</p>
-        <p class="navbar-text">${creattime} Date</p>
+        <p class="navbar-text">用户：${name}</p>
+        <%--<p class="navbar-text">登陆时间：<%out.print(createTime);%></p>--%>
     </div>
     <div align="right" style="padding:0px 10px 0px 0px">
-        <button type="button" class="btn btn-default navbar-btn" href="release.jsp">发布</button>
+        <button onclick="window.location.href = 'release.jsp'" class="navbar-btn btn btn-primary">
+            发布
+        </button>
     </div>
 </nav>
 <div class="ex1">
@@ -74,7 +76,7 @@
             <tr align="center">
                 <button type="submit" class="btn btn-default">提交</button>
                 <button type="reset" class="btn btn-default">重置</button>
-                <button type="button" class="btn btn-default" href="welcome.jsp">取消发布</button>
+                <a class="btn btn-warning" href="/GetAllServlet">取消发布</a>
             </tr>
             <%--差图片框，还有三个按钮的跳转--%>
 

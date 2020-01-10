@@ -42,8 +42,8 @@
                 <input type="password" name="pwd" required>
                 <label>密码</label>
             </div>
-            <input  class="btn btn-default" type="submit" name="" value="登陆">
-            <a class="btn btn-default" href="resister.jsp">注册</a>
+            <input  class="btn btn-default" type="submit" name="" value="登陆" style="margin-right: 230px;">
+            <a class="btn btn-default" href="register.jsp">注册</a>
         </form>
         <p>${msg}</p>
     </div>
