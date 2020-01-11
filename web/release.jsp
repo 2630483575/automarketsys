@@ -43,33 +43,33 @@
         <form action="/ReleaseServlet" method="post">
             <div class="form-group">
                 <label>车型:</label>
-                <select>
+                <select name="cartype">
                     <option value="0">请选择车型</option>
                     <option value="轿车">轿车</option>
                 </select>
             </div>
             <div class="form-group">
                 <label>品牌:</label>
-                <select>
+                <select name="carbrand">
                     <option value="0">请选择汽车品牌</option>
                     <option value="现代">现代</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="carmodel">详细型号:</label>
-                <input type="text" class="form-control" id="carmodel" placeholder="请填写汽车详细型号">
+                <label>详细型号:</label>
+                <input type="text" class="form-control" name="carmodel"  placeholder="请填写汽车详细型号">
             </div>
             <div class="form-group">
-                <label for="carmodel">车龄:</label>
-                <input type="text" class="form-control" id="carage" placeholder="请填写汽车使用时间">
+                <label>车龄:</label>
+                <input type="text" class="form-control" name="carage" placeholder="请填写汽车使用时间">
             </div>
             <div class="form-group">
-                <label for="carmodel">里程:</label>
-                <input type="text" class="form-control" id="carmile" placeholder="请填写汽车行驶里程">
+                <label>里程:</label>
+                <input type="text" class="form-control" name="mecarmile" placeholder="请填写汽车行驶里程">
             </div>
             <div class="form-group">
-                <label for="carmodel">价格:</label>
-                <input type="text" class="form-control" id="carprice" placeholder="请填写汽车销售价格">
+                <label>价格:</label>
+                <input type="text" class="form-control" name="carprice" placeholder="请填写汽车销售价格">
             </div>
 
 
